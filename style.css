@@ -1,0 +1,100 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.bg-img{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(./assets/hawaii.jpg);
+    background-repeat: no-repeat;
+    background-position-y: 75%;
+    background-size:cover;
+    height: 550px;
+    
+}
+.header-top{
+    display: inline;
+    max-width: 40%;
+    position: absolute;
+    top: 30%;
+    right: 5rem;
+    text-align: end;
+}
+
+.card-p{
+    font-size: 13px;
+}
+
+.form_control{
+    margin: 0 auto;
+}
+
+.footer_bg{
+    height: 82px;
+    background-color: #2a4461;
+}
+.footer_st{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    padding-top: 1rem;
+    align-items: center;
+}
+
+
+ @media (max-width: 1024px){
+    .nav-img {
+        width: 48px;
+        height: 52px;
+    }
+    .brand-a{
+        margin: 0 auto;
+    }
+    .brand_text {
+        font-size: 20px;
+    }
+    .nav-a{
+        margin: 0 auto;
+    }
+    ul{
+        font-size: 14px;
+    }
+ }
+
+ @media (max-width: 768px){
+
+    ul{
+        font-size: 12px;
+    }
+    .bg-img{
+        height: auto;
+    }
+    .header-top{
+        display: flex;
+        flex-flow: column wrap;
+        text-align: center;
+        font-size: 14px;
+        max-width: max-content;
+        position: static;
+        padding: 1rem;
+
+    }
+    .btn-header{
+        flex-direction: row;
+    }
+    .ada-card{
+        margin-top: 1rem;
+    }
+    .form_control{
+        margin: 0 auto;
+        padding:  2rem;
+    }
+    .footer_bg{
+        height: max-content;
+    }
+    .footer_st{
+        flex-direction: column;
+        justify-items: center;
+        text-align: center;
+    }
+    
+ }
